@@ -12,7 +12,7 @@ endif()
 project ("Patterns")
 
 # Добавьте источник в исполняемый файл этого проекта.
-add_executable (Patterns  main.cpp)
+add_executable (Patterns  main.cpp visitorVariant.hpp visitor.hpp)
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET Patterns PROPERTY CXX_STANDARD 20)
